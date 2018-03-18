@@ -6,11 +6,11 @@ class DBHelper {
     }
 
     static add(item) {
-        throw new Error();        
+        throw new Error();
     }
 
     static update() {
-        throw new Error();        
+        throw new Error();
     }
 
     static remove() {

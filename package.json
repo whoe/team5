@@ -4,10 +4,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run lint",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "start": "node ./server/index.js"
   },
   "dependencies": {
     "create-react-app": "^1.5.2",
@@ -15,7 +12,14 @@
     "next": "^5.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "body-parser": "1.18.2",
+    "connect-ensure-login": "0.1.1",
+    "cookie-parser": "1.4.3",
+    "dotenv": "5.0.1",
+    "express-session": "1.15.6",
+    "passport": "0.4.0",
+    "passport-github": "1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
