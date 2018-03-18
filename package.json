@@ -10,7 +10,8 @@
     "express": "^4.16.2",
     "request": "^2.83.0",
     "gulp": "^3.9.1",
-    "create-react-app": "^1.5.2"
+    "create-react-app": "^1.5.2",
+    "gulp-autoprefixer": "4.0.0",
   },
   "devDependencies": {
     "eslint": "^4.18.2",   
