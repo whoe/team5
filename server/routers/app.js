@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = (server, app) => {
     const render = pageName => (req, res) => app.render(req, res, `/${pageName}`);
 
