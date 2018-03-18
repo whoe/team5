@@ -1,5 +1,3 @@
-'use strict';
-
 const contacts = require('../controllers/contacts');
 const messages = require('../controllers/messages');
 

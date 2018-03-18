@@ -1,5 +1,3 @@
-'use strict';
-
 const dbHelper = require('../../infrastructure/dbHelper');
 
 module.exports = (req, res) => {

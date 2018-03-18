@@ -1,5 +1,3 @@
-'use strict';
-
 const expressSession = require('express-session');
 const connectEnsureLogin = require('connect-ensure-login');
 const passport = require('passport');

@@ -1,3 +1,1 @@
-'use strict';
-
-export default () => <div>Welcome to next.js!</div>
+export default () => <div>Welcome to next.js!</div>;
