@@ -1,0 +1,19 @@
+{
+"name": "team5",
+"version": "0.0.1",
+"private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+   "dependencies": {
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "gulp": "^3.9.1",
+    "create-react-app": "^1.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",   
+    "webpack": "^4.1.1"
+  }
+}
