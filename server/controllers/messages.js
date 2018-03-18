@@ -1,5 +1,8 @@
 'use strict';
 
+const dbHelper = require('../../infrastructure/dbHelper');
+
 module.exports = (req, res) => {
-    res.send('/messages');
+    // temp test
+    dbHelper.get('a').then(response => res.json(response));
 };
