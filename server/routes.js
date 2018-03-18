@@ -4,20 +4,24 @@ const auth = require('./controllers/auth');
 const contacts = require('./controllers/contacts');
 const messages = require('./controllers/messages');
 
+module.exports = (server, app) => {
+    const render = pageName => (req, res) => app.render(req, res, `/${pageName}`);
 
+    server
+        .route('/')
+        .get(render('index'));
 
-module.exports = app => {
-    app
+    server
         .route('/messages')
         .get(messages)
 
-    app
+    server
         .route('/contacts')
         .get(contacts)
 
-    app
+    server
         .route('/auth')
         .get(auth)
 
-    app.all('*', (req, res) => res.sendStatus(404));
+    server.all('*', (req, res) => res.sendStatus(404));
 };
