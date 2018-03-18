@@ -1,7 +1,7 @@
 # Kill0gr@m
 ## Мы используем
 * [HruDB](https://hrudb.herokuapp.com/) : [Документация](https://github.com/urfu-2017/hrudb-docs) База данных
-* [React](https://reactjs.org/)
+* [Nextjs](https://github.com/zeit/next.js)
 * [ESLint](http://eslint.org/): для анализа кода
 * [Gulp](https://gulpjs.com/) : для сборки проекта, [Пример](https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html)
 * [Now](https://zeit.co/now) : для хранения приложения 
