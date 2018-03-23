@@ -1,6 +1,7 @@
 const dbHelper = require('../../infrastructure/dbHelper');
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
     // temp test
-    dbHelper.get('a').then(response => res.json(response));
+    await dbHelper.put('a', 'put');
+    dbHelper.getAll('a').then(response => res.json(response));
 };

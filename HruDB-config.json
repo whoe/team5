@@ -1,4 +1,6 @@
 {
     "token": "type token here",
-    "url": "https://hrudb.herokuapp.com/storage/"
+    "dbUrl": "https://hrudb.herokuapp.com/storage/",
+    "requestTimeout": 1000,
+    "retryCount": 3
 }
