@@ -1,9 +1,7 @@
-'use strict';
-
 const got = require('got');
 const querystring = require('querystring');
 
-const { token, dbUrl, requestTimeout, retryCount } = require('../HruDB-config.json');
+const { token, dbUrl, requestTimeout, retryCount } = require('../../HruDB-config.json');
 
 class DBHelper {
 
@@ -47,6 +45,7 @@ class DBHelper {
             try {
                 return await got(url, options);
             } catch (e) {
+                console.info(e);
                 continue;
             }
         }
@@ -61,7 +60,8 @@ class DBHelper {
                 'Content-Type': 'plain/text'
             },
             timeout: requestTimeout,
-            body
+            body,
+            reties: retryCount
         };
     }
 }

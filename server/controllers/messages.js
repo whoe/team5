@@ -1,4 +1,4 @@
-const dbHelper = require('../../infrastructure/dbHelper');
+const dbHelper = require('../libs/dbHelper');
 
 module.exports = async (req, res) => {
     // temp test
