@@ -18,26 +18,26 @@ class DBHelper {
     }
 
     static _get(url) {
-        const options = DBHelper._makeOption('GET');
+        const options = DBHelper._makeOptions('GET');
 
         return DBHelper.request(url, options)
             .then(res => JSON.parse(res.body));
     }
 
     static async put(key, value) {
-        const options = DBHelper._makeOption('PUT', value);
+        const options = DBHelper._makeOptions('PUT', value);
 
         return DBHelper.request(dbUrl + key, options);
     }
 
     static async post(key, value) {
-        const options = DBHelper._makeOption('POST', value);
+        const options = DBHelper._makeOptions('POST', value);
 
         return DBHelper.request(dbUrl + key, options);
     }
 
     static async delete(key) {
-        const options = DBHelper._makeOption('DELETE');
+        const options = DBHelper._makeOptions('DELETE');
 
         return DBHelper.request(dbUrl + key, options);
     }
@@ -53,7 +53,7 @@ class DBHelper {
         throw new Error();
     }
 
-    static _makeOption(method, body = null) {
+    static _makeOptions(method, body = null) {
         return {
             method,
             headers: {
