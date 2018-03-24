@@ -1,0 +1,10 @@
+{
+    "lightnessThreshold": 680,
+    "darknessThreshold": 100,
+    "svgConfig": {
+        "version": "1.2",
+        "baseProfile": "tiny",
+        "squareFace": 2,
+        "margin": 1
+    }
+}
